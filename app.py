@@ -3,10 +3,8 @@ from flask_restful import Resource, Api
 import pickle
 import pandas as pd
 from flask_cors import CORS
-from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
-run_with_ngrok(app)
 CORS(app)
 
 api = Api(app)
